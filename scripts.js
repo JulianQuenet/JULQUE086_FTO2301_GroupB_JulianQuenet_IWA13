@@ -6,16 +6,16 @@ let calculated = "1";
 
 const logCalc = () => {
   const number = parseInt(calculated);
-  const isNumber = typeof number === "number";
-  const calculatedAsNumber = isNumber ? number : parseInt(calculated);
-  calculated = calculatedAsNumber + 1;
+  calculated = number
+  return ++ calculated
 };
 
 const calcUser = () => {
   logCalc();
-  if (calculated > 2) user = "John";
-  if (calculated > 2) state = "requesting";
+  if (calculated > 1) user = "John";
+  if (calculated > 1) state = "requesting";
   if (calculated > 3) state = "idle";
+  calculated ++ 
 };
 
 const checkUser = () => {
@@ -25,7 +25,6 @@ const checkUser = () => {
   }
 };
 
-checkUser();
 
 // Only allowed to change code above
 
