@@ -15,7 +15,7 @@ const calcUser = () => {
   if (calculated > 1) user = "John";
   if (calculated > 1) state = "requesting";
   if (calculated > 3) state = "idle";
-  calculated ++ 
+  return calculated ++ 
 };
 
 const checkUser = () => {
